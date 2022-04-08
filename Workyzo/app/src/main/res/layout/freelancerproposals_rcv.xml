@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/SkyBlue">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/Freelancer_FullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/Fullname"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/Freelancer_ProfileImage"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/freelancer_Username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/Username"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/Freelancer_ProfileImage"
+                app:layout_constraintTop_toBottomOf="@+id/Freelancer_FullName" />
+
+            <ImageView
+                android:id="@+id/Freelancer_ProfileImage"
+                android:layout_width="98dp"
+                android:layout_height="102dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="62dp"
+                android:adjustViewBounds="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:srcCompat="@drawable/avatar_man" />
+
+            <ImageView
+                android:id="@+id/Freelancer_VerifiedIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toEndOf="@+id/Freelancer_ProfileImage"
+                app:layout_constraintTop_toBottomOf="@+id/freelancer_Username"
+                app:srcCompat="@drawable/ic_verified_user"
+                app:tint="@color/SkyBlue" />
+
+            <ImageView
+                android:id="@+id/freelancer_CountryFlag"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_flag" />
+
+            <ImageView
+                android:id="@+id/Freelancer_RatingIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toEndOf="@+id/Freelancer_VerifiedIcon"
+                app:layout_constraintTop_toBottomOf="@+id/freelancer_Username"
+                app:srcCompat="@drawable/ic_star_rate"
+                app:tint="@color/SkyBlue" />
+
+            <ImageView
+                android:id="@+id/freelancer_Rating"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                app:layout_constraintStart_toEndOf="@+id/FreelancerRating_Value"
+                app:layout_constraintTop_toBottomOf="@+id/freelancer_Username"
+                app:srcCompat="@drawable/ic_textsms"
+                app:tint="@color/SkyBlue" />
+
+            <TextView
+                android:id="@+id/FreelancerRating_Value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="0.0"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/Freelancer_RatingIcon"
+                app:layout_constraintTop_toBottomOf="@+id/freelancer_Username" />
+
+            <TextView
+                android:id="@+id/freelancerReviews_Value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="0"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/freelancer_Rating"
+                app:layout_constraintTop_toBottomOf="@+id/freelancer_Username" />
+
+            <TextView
+                android:id="@+id/Freelancer_BidAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Bid Amount"
+                android:textColor="@color/Red"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/freelancer_ProHeadline" />
+
+
+            <TextView
+                android:id="@+id/freelancer_ProHeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="132dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Professional Headline"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Freelancer_RatingIcon" />
+
+            <TextView
+                android:id="@+id/freelancer_ProposalSummary"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="2"
+                android:text="Proposal Content"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Freelancer_BidAmount" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="13dp"
+                android:text="@string/View_more"
+                android:textColor="@color/SkyBlue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/freelancer_ProposalSummary" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

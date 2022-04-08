@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="16dp">
+
+    <TextView
+        android:id="@+id/ConvStart_LastDate"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="#56D1D0CD"
+        android:fontFamily="sans-serif-medium"
+        android:text="Date"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_gchat_message_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/background_sent_message"
+        android:fontFamily="sans-serif-medium"
+        android:maxWidth="260dp"
+        android:padding="8dp"
+        android:text="Send Message"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConvStart_LastDate" />
+
+    <ImageView
+        android:id="@+id/text_Imagechat_message_me"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/background_sent_message"
+        android:fontFamily="sans-serif-medium"
+        android:maxWidth="260dp"
+        android:padding="8dp"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConvStart_LastDate"
+        app:srcCompat="@drawable/avatar_man" />
+
+    <TextView
+        android:id="@+id/text_gchat_timestamp_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="10:00"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/text_gchat_message_me"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/MessageSeen_Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/text_gchat_message_me"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.68"
+        app:srcCompat="@drawable/ic_baseline_done_all_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

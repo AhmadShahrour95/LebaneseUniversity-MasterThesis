@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "164296132181",
+    "project_id": "workyzo-mobile-app",
+    "storage_bucket": "workyzo-mobile-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:164296132181:android:717e7254251e8675c176dc",
+        "android_client_info": {
+          "package_name": "com.appstechio.workyzo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "164296132181-86891ab1fj42eo1lo57uih4pl6lv20ur.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY43tyJ6l42qVSlNLJcHlVtAgvT9Rv3E8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "164296132181-86891ab1fj42eo1lo57uih4pl6lv20ur.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
